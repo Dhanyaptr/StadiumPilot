@@ -128,7 +128,8 @@ Supported intents include:
 
 ### AI
 
-- Gemini API (Google)
+- Groq API
+- Llama 3.3 70B Versatile
 
 ### Data Storage
 

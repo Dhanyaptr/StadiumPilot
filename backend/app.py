@@ -8,7 +8,7 @@ from models.request_models import NavigationRequest, ChatRequest
 from services.navigation_service import NavigationService
 from services.chat_service import ChatService
 from services.prompt_builder import PromptBuilder
-from services.gemini_service import GeminiService
+from services.groq_service import GroqService
 
 # ---------------------------------------------------
 # Load Environment Variables
@@ -41,7 +41,7 @@ app.add_middleware(
 
 navigator = NavigationService()
 chat_service = ChatService()
-llm = GeminiService(API_KEY)
+llm = GroqService(API_KEY)
 
 # ===================================================
 # Navigation API
@@ -100,7 +100,10 @@ def chat(request: ChatRequest):
         # Facility
         if status == "facility":
 
-            prompt = PromptBuilder.build_facility_prompt(result)
+            prompt = PromptBuilder.build_facility_prompt(
+            result,
+            request.message
+        )
 
         # Rules
         elif status == "rule":

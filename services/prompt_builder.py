@@ -31,14 +31,15 @@ Response Guidelines:
         return prompt
     
     @staticmethod
-    def build_facility_prompt(result):
+    def build_facility_prompt(result, user_message):
 
         facility = result["facility"]
 
         return f"""
-    You are StadiumPilot AI, the official AI assistant for FIFA World Cup 2026 at Gillette Stadium.
+    You are StadiumPilot AI, the official AI assistant for the FIFA World Cup 2026 at Gillette Stadium.
 
-    The visitor is asking about a facility.
+    User Question:
+    {user_message}
 
     Facility Type:
     {result["facility_type"]}
@@ -47,12 +48,14 @@ Response Guidelines:
     {facility}
 
     Instructions:
-    - Use only the information provided.
-    - If the user asks about food options, use the menu information if available.
-    - If the information is unavailable, politely say you don't have that information.
-    - Mention the nearby section when relevant.
-    - Be friendly and concise.
+    - Answer ONLY the user's question.
+    - Use ONLY the information provided above.
+    - If the user asks about timings, answer using the opening_hours field if available.
+    - If the user asks about food items, answer using the menu field.
+    - If the user asks about the location, mention the nearby section.
+    - If the requested information is unavailable, politely state that you don't have that information.
     - Keep the response under 60 words.
+    - Be friendly, natural, and concise.
     """
 
     @staticmethod

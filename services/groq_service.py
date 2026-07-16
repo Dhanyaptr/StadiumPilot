@@ -1,7 +1,7 @@
 from groq import Groq
 
 
-class GeminiService:
+class GroqService:
 
     def __init__(self, api_key):
         self.client = Groq(api_key=api_key)
