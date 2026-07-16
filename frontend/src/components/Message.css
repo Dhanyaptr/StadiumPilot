@@ -4,7 +4,9 @@
 
     align-items:flex-end;
 
-    margin:20px 15px;
+    gap:12px;
+
+    margin-bottom:20px;
 
 }
 
@@ -20,6 +22,8 @@
 
 }
 
+/* ---------- Avatars ---------- */
+
 .avatar{
 
     width:42px;
@@ -30,19 +34,21 @@
 
     display:flex;
 
-    justify-content:center;
-
     align-items:center;
+
+    justify-content:center;
 
     font-size:22px;
 
-    margin:0 10px;
+    flex-shrink:0;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
 
 }
 
 .bot-avatar{
 
-    background:#0d6efd;
+    background:#1E66FF;
 
     color:white;
 
@@ -50,15 +56,17 @@
 
 .user-avatar{
 
-    background:#16a34a;
+    background:#22C55E;
 
     color:white;
 
 }
 
+/* ---------- Common Bubble ---------- */
+
 .message-bubble{
 
-    max-width:55%;
+    max-width:70%;
 
     padding:14px 18px;
 
@@ -66,28 +74,36 @@
 
     line-height:1.6;
 
-    word-wrap:break-word;
+    word-break:break-word;
+
+    white-space:pre-line;
+
+    box-shadow:0 6px 16px rgba(0,0,0,.08);
 
 }
+
+/* ---------- Bot Bubble ---------- */
 
 .bot-bubble{
 
-    background:white;
+    background:#F3F8FF;
 
     color:#222;
 
-    border-radius:18px 18px 18px 5px;
+    border-left:4px solid #1976D2;
 
-    box-shadow:0 3px 8px rgba(0,0,0,.08);
+    border-radius:18px 18px 18px 6px;
 
 }
 
+/* ---------- User Bubble ---------- */
+
 .user-bubble{
 
-    background:#0d6efd;
+    background:linear-gradient(135deg,#1E66FF,#2D8CFF);
 
     color:white;
 
-    border-radius:18px 18px 5px 18px;
+    border-radius:18px 18px 6px 18px;
 
 }

@@ -17,9 +17,10 @@ function ChatInput({ onSend }) {
 
     return (
 
-        <div className="chat-input">
+        <div className="chat-input-container">
 
             <input
+                className="chat-input"
                 value={message}
                 placeholder="Ask me anything..."
                 onChange={(e) => setMessage(e.target.value)}
@@ -30,8 +31,11 @@ function ChatInput({ onSend }) {
                 }}
             />
 
-            <button onClick={handleSend}>
-                Send
+            <button
+                className="send-btn"
+                onClick={handleSend}
+            >
+                ➤
             </button>
 
         </div>
