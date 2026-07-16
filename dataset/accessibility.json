@@ -1,0 +1,19 @@
+{
+    "wheelchair": {
+        "description": "Wheelchair-accessible seating is available throughout the stadium.",
+        "entrance": "Gate A",
+        "parking": "Accessible Parking Lot AP1"
+    },
+
+    "accessible_restroom": {
+        "location": "Near Section 110"
+    },
+
+    "elevator": {
+        "location": "North Concourse near Section 120"
+    },
+
+    "hearing_assistance": {
+        "description": "Assistive listening devices are available at the Guest Services Desk."
+    }
+}

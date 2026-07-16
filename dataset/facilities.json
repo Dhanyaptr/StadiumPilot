@@ -1,0 +1,52 @@
+{
+    "food_courts": [
+        {
+            "id": "FC1",
+            "name": "Food Court A",
+            "near_section": "110",
+            "menu": [
+                "Vegetarian",
+                "Non-Vegetarian",
+                "Pizza",
+                "Burgers",
+                "Sandwiches",
+                "Beverages",
+                "Coffee"
+            ],
+            "opening_hours": "9:00 AM - 11:00 PM"
+        }
+    ],
+
+    "restrooms": [
+        {
+            "id": "R2",
+            "name": "Restroom R2",
+            "near_section": "110",
+            "accessible": true
+        }
+    ],
+
+    "medical": [
+        {
+            "id": "M1",
+            "name": "Medical Center",
+            "near_section": "105",
+            "available": "24/7"
+        }
+    ],
+
+    "merchandise": [
+        {
+            "id": "S1",
+            "name": "Official FIFA Store",
+            "near_section": "112",
+            "items": [
+                "Jerseys",
+                "Scarves",
+                "Caps",
+                "Football",
+                "Souvenirs"
+            ]
+        }
+    ]
+}

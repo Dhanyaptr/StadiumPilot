@@ -1,0 +1,13 @@
+[
+    {
+        "entrance_id": "P11",
+        "connected_road": "I-95",
+        "parking_lots": [
+            "50A",
+            "50B",
+            "42A",
+            "42B"
+        ],
+        "nearest_gate": "North Gate"
+    }
+]

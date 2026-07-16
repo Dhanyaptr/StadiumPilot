@@ -1,0 +1,22 @@
+[
+    {
+        "from":"50A",
+        "to":"Entrance P11",
+        "distance_meters":180,
+        "walking_time":"3 min"
+    },
+
+    {
+        "from":"P11",
+        "to":"North Gate",
+        "distance_meters":120,
+        "walking_time":"2 min"
+    },
+
+    {
+        "from":"North Gate",
+        "to":"110",
+        "distance_meters":300,
+        "walking_time":"5 min"
+    }
+]

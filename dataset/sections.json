@@ -1,0 +1,11 @@
+[
+    {
+        "section_id": "110",
+        "level": "Lower Bowl",
+        "category": "Category 1",
+        "nearest_gate": "North Gate",
+        "nearest_restroom": "R2",
+        "nearest_foodcourt": "FC1",
+        "accessible": true
+    }
+]

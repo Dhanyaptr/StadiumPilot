@@ -1,0 +1,23 @@
+[
+    {
+        "parking_id": "50A",
+        "parking_name": "Lot 50A",
+        "parking_type": "General Parking",
+        "entry_from": "I-95",
+        "recommended_entrance": "P11",
+        "walking_time": "5 min",
+        "pedestrian_crossing": "Crossing 1",
+        "nearest_gate": "North Gate"
+    },
+
+    {
+        "parking_id": "3A",
+        "parking_name": "Lot 3A",
+        "parking_type": "Prepaid Parking",
+        "entry_from": "Route 1",
+        "recommended_entrance": "P2",
+        "walking_time": "6 min",
+        "pedestrian_crossing": "Crossing 2",
+        "nearest_gate": "East Gate"
+    }
+]
