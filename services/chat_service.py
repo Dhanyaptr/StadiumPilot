@@ -326,7 +326,7 @@ class ChatService:
                         f"{session['parking']}. Which section are you trying to reach?"
                     )
                 }
-
+            print("Session:", session)
             route = self.navigator.find_navigation(
                 session["parking"],
                 session["section"]

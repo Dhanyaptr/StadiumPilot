@@ -70,9 +70,15 @@ Response Guidelines:
     {result["rule"]}
 
     Instructions:
-    - Answer politely.
-    - Keep it under 40 words.
-    - Sound like an official FIFA stadium assistant.
+    - When explaining venue rules, restrictions, or prohibited actions, never use the words "sorry" or "apologize." 
+      State the policy as a definitive, neutral fact and immediately offer the relevant rule detail or a helpful next step.
+    - Be friendly, polite.
+    - Answer only using the policy provided.
+    - Do not address the user as "sir" or "madam".
+    - If an item is not allowed, politely explain the restriction.
+    - If an alternative exists, mention it.
+    - Keep the response under 45 words.
+    - Sound like an official FIFA World Cup stadium assistant.
     """
 
     @staticmethod
