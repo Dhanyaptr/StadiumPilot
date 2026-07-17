@@ -29,7 +29,8 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=["http://localhost:5173",
+                   "https://stadium-pilot-sigma.vercel.app/"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -49,7 +50,7 @@ llm = GroqService(API_KEY)
 
 @app.post("/navigate")
 def navigate(request: NavigationRequest):
-
+    
     route = navigator.find_navigation(
         request.parking_id,
         request.section_id
